@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@300;400;500;700&family=Slackey&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&family=Roboto:wght@300;400;500;700&family=Slackey&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +13,53 @@ body {
 .container {
   margin: auto;
   width: 80%;
+}
+
+.section {
+  height: 400px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.left-container,
+.right-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  width: 300px;
+}
+
+.section:nth-child(even) .image-wrapper {
+  transform: translateX(-200%);
+  transition: transform 0.4s ease;
+}
+
+.section:nth-child(even) .image-wrapper.slide {
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+
+.section:nth-child(odd) .image-wrapper {
+  transform: translateX(200%);
+  transition: transform 0.4s ease;
+}
+
+.section:nth-child(odd) .image-wrapper.slide {
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+
+.text-wrapper {
+  font-family: "Neucha", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: #b00d02;
+  width: 500px;
 }
 
 .header {
@@ -55,20 +104,4 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(224, 25, 35, 0.4);
-}
-
-.chewy-section {
-  margin-top: 40px 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.image-wrapper {
-  margin: 60px;
-  min-width: 300px;
-}
-
-.text-wrapper {
-  padding: 0 100px;
 }
