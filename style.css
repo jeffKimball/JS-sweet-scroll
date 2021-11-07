@@ -29,26 +29,26 @@ body {
   align-items: center;
 }
 
-.image-wrapper {
+.candy-wrapper {
   width: 300px;
 }
 
-.section:nth-child(even) .image-wrapper {
+.section:nth-child(even) .candy-wrapper {
   transform: translateX(-200%);
   transition: transform 0.4s ease;
 }
 
-.section:nth-child(even) .image-wrapper.slide {
+.section:nth-child(even) .candy-wrapper.slide {
   transform: translateX(0);
   transition: transform 0.4s ease;
 }
 
-.section:nth-child(odd) .image-wrapper {
+.section:nth-child(odd) .candy-wrapper {
   transform: translateX(200%);
   transition: transform 0.4s ease;
 }
 
-.section:nth-child(odd) .image-wrapper.slide {
+.section:nth-child(odd) .candy-wrapper.slide {
   transform: translateX(0);
   transition: transform 0.4s ease;
 }
