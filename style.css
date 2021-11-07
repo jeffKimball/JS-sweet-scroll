@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+.container {
+  margin: auto;
+  width: 80%;
+}
+
 .header {
   margin-top: 30px;
   height: 250px;
@@ -30,7 +35,7 @@ img {
 
 .arrow {
   width: 100px;
-  height: 150px;
+  height: 180px;
 }
 
 .page-title {
@@ -50,4 +55,20 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(224, 25, 35, 0.4);
+}
+
+.chewy-section {
+  margin-top: 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-wrapper {
+  margin: 60px;
+  min-width: 300px;
+}
+
+.text-wrapper {
+  padding: 0 100px;
 }
